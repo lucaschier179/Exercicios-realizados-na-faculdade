@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="icons8-patrick-star-50.png" type="image/x-icon">
+</head>
+<body onload="apresentar()">
+    <form id="matriz">
+        <div id="lista"></div>
+        <input type="text" id="nome" autocomplete="off" autofocus>
+        <input type="button" id="btn1" value="Inserir" onclick="inserir()">
+        <input type="button" id="btn2" value="Atualizar" onclick="apresentar()">
+        <br>
+        <input type="number" id="indice">
+        <input type="button" id="btn3" value="Buscar" onclick="encontra_indice()">
+    </form>
+    <script>
+
+        alunos=['Lucas', 'José', 'Gabriel', 'Zequinha']
+        
+        function apresentar() {
+            document.getElementById('lista').innerHTML=alunos
+        }
+
+        function inserir() {
+            if (nome.value != '') {
+                alunos.push(nome.value)
+                document.getElementById('nome').value=''    
+            } else{
+                alert('[ERRO] Insira um nome [ERRO]')
+            }
+        }
+
+        function encontra_indice() {
+            indice=parseInt(document.getElementById('indice').value)
+            alert(alunos[indice])
+        }
+    </script>
+</body>
+</html>
