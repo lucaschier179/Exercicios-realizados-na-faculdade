@@ -5,39 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios 01/08</title>
-    <link rel="shortcut icon" href="icons8-football-64.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icons8-minecraft-pickaxe-96.png" type="image/x-icon">
 </head>
 <body onload="apresentar()">
     <form id="matriz">
         <div id="lista"></div>
         <input type="text" id="nome" autocomplete="off" autofocus>
-        <input type="button" id="btn1" value="Inserir" onclick="inserir()">
+        <input type="button" id="btn1" value="Inserir(push)" onclick="inserir()">
+        <input type="button" id="btn1" value="Inserir(unshift)" onclick="inserir_unshift()">
+        <input type="button" id="btn1" value="Remover(shift)" onclick="remover_shift()">
+        <input type="button" id="btn4" value="Remover(pop)" onclick="remover()">
         <input type="button" id="btn2" value="Atualizar" onclick="apresentar()">
         <br>
         <input type="number" id="indice">
         <input type="button" id="btn3" value="Buscar" onclick="encontra_indice()">
     </form>
-    <script>
-
-        alunos=['Lucas', 'Cristiano', 'Gabriel', 'Zequinha']
-        
-        function apresentar() {
-            document.getElementById('lista').innerHTML=alunos
-        }
-
-        function inserir() {
-            if (nome.value != '') {
-                alunos.push(nome.value)
-                document.getElementById('nome').value=''    
-            } else{
-                alert('[ERRO] Insira um nome [ERRO]')
-            }
-        }
-
-        function encontra_indice() {
-            indice=parseInt(document.getElementById('indice').value)
-            alert(alunos[indice])
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
