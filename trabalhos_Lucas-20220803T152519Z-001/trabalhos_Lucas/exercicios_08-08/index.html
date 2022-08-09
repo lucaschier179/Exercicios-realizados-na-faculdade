@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <form>
-        <h2>Cadastro</h2>
-        <input type="text" name="nome" id="nome">
-        <input type="date" name="nascimento" id="">
-    </form>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Nome:
+                <input type="text" name="nome" id="nome" autocomplete="off" autofocus>
+            </p>
+            <p>Ano de Nascimento: 
+                <input type="number" name="nascimento" id="nascimento">
+            </p>
+            <p class="botao">
+                <input id="botao1" type="button" value="Verificar" onclick="verificar(nascimento.value)">
+            </p>
+        </div>
+        <div id="res">
+            <label>Preencha corretamente para ver o resultado!</label>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; LucasMarceloSchier</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
