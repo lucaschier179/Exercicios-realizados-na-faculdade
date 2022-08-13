@@ -1,14 +1,13 @@
 body {
     background: #ED4118;
-    font: bolder 14.1pt Helvetica;
+    font: normal 14pt Helvetica;
 }
 
 header {
-    margin-top: 4%;
-    margin-bottom: -2%;
+    margin-top: 5%;
     color: white;
     text-align: center;
-    text-shadow: 4px 2px 6px rgba(0, 0, 0, 1);
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 1);
 }
 
 section {
@@ -17,35 +16,13 @@ section {
     padding: 20px;
     width: 465px;
     margin: auto;
-    margin-top: 4%;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
-}
-
-footer {
-    margin-top: 3%;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    text-shadow: 4px 2px 6px rgba(0, 0, 0, 1);
+    margin-top: 2%;
+    margin-bottom: -1%;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .fonte {
     color: white;
-}
-
-.botao {
-    margin-top: 10%;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-#botao1 {
-    background-color: white;
-    border-radius: 10px;
-    width: 100px;
-    height: 30px;
-    border: 0.1px solid black;
 }
 
 .usuario {
@@ -55,8 +32,31 @@ footer {
     width: 120px;
 }
 
+.botao {
+    margin-top: 5%;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#botao1 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: 0.1px solid black;
+    font: bolder 12pt Helvetica;
+}
+
 #res {
     color: white;
-    margin: 10%;
-    margin-bottom: 3%;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }

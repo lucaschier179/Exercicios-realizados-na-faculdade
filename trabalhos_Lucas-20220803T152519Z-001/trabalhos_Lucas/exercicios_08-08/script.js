@@ -8,7 +8,6 @@ function verificar() {
         window.alert('[ERRO] Ano Inválido - Verifique os dados e tente novamente [ERRO]')
     }else {
         let idade = ano - Number(nascimento.value)
-        res.style.textAlign = 'center'
-        res.innerHTML = `Seu nome é <strong>${nome}</strong> e você tem <strong>${idade}</strong> anos.`
+        res.innerHTML = `Seu nome é <strong>${nome}</strong> e você tem <strong>${idade} anos.</strong>`
     }
 }

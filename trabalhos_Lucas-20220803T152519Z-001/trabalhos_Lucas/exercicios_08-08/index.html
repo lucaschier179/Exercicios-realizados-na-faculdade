@@ -11,25 +11,27 @@
     <header class="fonte">
         <h1>Verificador de Idade</h1>
     </header>
-    <section class="fonte">
-        <div>
-            <p>Nome:
-                <input type="text" name="nomeuser" id="nomeuser" class="usuario" autocomplete="off" autofocus>
-            </p>
-            <p>Ano de Nascimento: 
-                <input type="number" name="nasc" id="nasc" class="usuario" min="0">
-            </p>
-            <p class="botao">
-                <input id="botao1" type="button" value="Verificar" onclick="verificar()">
-            </p>
-        </div>
-        <div id="res">
-            <label>Preencha corretamente para ver o resultado!</label>
-        </div>
-    </section>
-    <footer class="fonte">
-        <p>&copy; LucasMarceloSchier</p>
-    </footer>
+        <form action="">
+            <section class="fonte">
+                <div>
+                    <p>Nome Completo:
+                        <input type="text" name="nomeuser" id="nomeuser" class="usuario" autocomplete="off" autofocus placeholder=" Digite Aqui...">
+                    </p>
+                    <p>Ano de Nascimento: 
+                        <input type="number" name="nasc" id="nasc" class="usuario" min="0" placeholder=" Digite Aqui...">
+                    </p>
+                    <p class="botao">
+                        <input id="botao1" type="button" value="Verificar" onclick="verificar()">
+                    </p>
+                </div>
+                <div id="res">
+                    <label>Preencha corretamente para ver o resultado!</label>
+                </div>
+            </section>
+            <footer class="fonte">
+                <p>&copy; LucasMarceloSchier</p>
+            </footer>
+        </form>
     <script src="script.js"></script>
 </body>
 </html>
